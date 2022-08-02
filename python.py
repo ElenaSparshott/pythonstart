@@ -22,3 +22,16 @@ if number in range_1 :
     print(number, 'is present in the range.')
 else :
     print(number, 'is not present in the range.')
+
+
+
+def my_outer_function():
+    print("Hello from my outer function")
+
+    def my_inner_function():
+        print("Hi there from my inner function!")
+
+
+
+my_outer_function()
+
