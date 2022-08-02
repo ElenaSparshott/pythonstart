@@ -15,13 +15,13 @@ print(m)
 
 
 
-range_1 = range(0, 20, 1)
-number = int(input('Enter a number : '))
+# range_1 = range(0, 20, 1)
+# number = int(input('Enter a number : '))
  
-if number in range_1 :
-    print(number, 'is present in the range.')
-else :
-    print(number, 'is not present in the range.')
+# if number in range_1 :
+#     print(number, 'is present in the range.')
+# else :
+#     print(number, 'is not present in the range.')
 
 
 
@@ -30,8 +30,10 @@ def my_outer_function():
 
     def my_inner_function():
         print("Hi there from my inner function!")
+        print("another message")
+    return my_inner_function
 
+my_inner = my_outer_function()
+my_inner()
 
-
-my_outer_function()
 
