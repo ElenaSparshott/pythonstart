@@ -25,15 +25,37 @@ print(m)
 
 
 
-def my_outer_function():
-    print("Hello from my outer function")
+# def my_outer_function():
+#     print("Hello from my outer function")
 
-    def my_inner_function():
-        print("Hi there from my inner function!")
-        print("another message")
-    return my_inner_function
+#     def my_inner_function():
+#         print("Hi there from my inner function!")
+#         print("another message")
+#     return my_inner_function
 
-my_inner = my_outer_function()
-my_inner()
+# my_inner = my_outer_function()
+# my_inner()
 
+
+
+# 'set' is a built in which get the unique items in a list (array).
+
+numbers = [1, 2, 2, 3, 3, 4, 5, 5, 6, 7, 8, 8, 9, 9, 10, ]
+
+
+def get_unique_numbers(numbers):
+
+    list_of_unique_numbers = []
+
+    unique_numbers = set(numbers)
+
+    for number in unique_numbers:
+        list_of_unique_numbers.append(number)
+
+    return list_of_unique_numbers
+
+
+print(get_unique_numbers(numbers))
+
+# result: [1, 2, 3, 4, 5]
 
