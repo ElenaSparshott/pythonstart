@@ -60,7 +60,7 @@ print(get_unique_numbers(numbers))
 result: [1, 2, 3, 4, 5]
 
 
-define a function, square the numbers in a range and append to a list.
+# define a function, square the numbers in a range and append to a list.
 
 li = [1, 2, 3, 4, 5]
 
